@@ -17,6 +17,9 @@ public class OrderServiceImpl implements OrderService{
     // private final DiscountPolicy discountPolicy = new FixDiscountPolicy(); 구체 클래스까지 의존하므로 변경해야함. DIP OCP 위반
     /// private final DiscountPolicy discountPolicy = new RateDiscountPollicy();
 
+
+
+
     @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
